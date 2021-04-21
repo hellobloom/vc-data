@@ -89,6 +89,7 @@ export type AccountV1 = CreateThing<
   'Account',
   {
     identifier?: string | number
+    description?: string
     organization: ExpandThing<OrganizationAccountV1>
     startDate?: string
     endDate?: string
