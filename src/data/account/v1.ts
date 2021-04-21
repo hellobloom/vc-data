@@ -88,6 +88,7 @@ export type OrganizationAccountV1 = ExtendThing<OrganizationAccountV1Mixin, Orga
 export type AccountV1 = CreateThing<
   'Account',
   {
+    name?: string | Array<string>
     identifier?: string | number
     description?: string
     organization: ExpandThing<OrganizationAccountV1>
@@ -183,6 +184,7 @@ const getHelperContextEntries = () => {
     type: 'Account',
     typeIdBase: 'affSchema',
     fields: {
+      name: 'schema',
       identifier: 'affSchema',
       description: 'affSchema',
       organization: 'affSchema',
