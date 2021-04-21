@@ -184,6 +184,7 @@ const getHelperContextEntries = () => {
     typeIdBase: 'affSchema',
     fields: {
       identifier: 'affSchema',
+      description: 'affSchema',
       organization: 'affSchema',
       startDate: 'affSchema',
       endDate: 'affSchema',
